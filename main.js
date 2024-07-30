@@ -8,7 +8,7 @@ const options = {
 const getWeather =(city)=>
 {
     cityName.innerHTML = city
-    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+ city, options)
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?',+ options)
     .then(response => response.json())
     .then(response => {
         console.log(response)

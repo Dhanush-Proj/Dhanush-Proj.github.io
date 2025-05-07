@@ -1,6 +1,5 @@
 
-$('#navigation a').on('click', function(e) {
-  e.preventDefault();
+$('#navigation a').on('click', function() {
   var hash = this.hash;
   $('html, body').animate({
     scrollTop: $(this.hash).offset().top
@@ -36,3 +35,7 @@ $("#contact input, #contact textarea").on('focusout', function(){
   }
 
 });
+// document.getElementById('downloadbtn').addEventListener('click',function(){
+//   window.location.href = "https://drive.google.com/uc?export=download&id=1OVOyQLRrmGQ7yr3UzPGuILc5P73wNp-v";
+//   window.location.reload();
+// })

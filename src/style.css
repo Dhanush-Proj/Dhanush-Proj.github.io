@@ -4,6 +4,8 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Lato", serif !important;
+
+
 }
 
 p, span, a{
@@ -69,7 +71,9 @@ p, span, a{
 
 #header{
 	min-height: 100vh;
-	background-image: url('https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?t=st=1746598919~exp=1746602519~hmac=e48cd5e1ab8c70f4dbd65dd75b04ede515b48e3435175db3e8b0078e246116d4&w=996');
+	background-image: url('Untitled.jpg');
+
+    background-color: #0F0F0F;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -234,7 +238,7 @@ p, span, a{
 }
 
 #about p{
-	color: #999;
+	color: #F5F5F5;
 }
 
 #about img{

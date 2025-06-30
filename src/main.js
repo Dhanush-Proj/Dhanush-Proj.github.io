@@ -39,3 +39,4 @@ $("#contact input, #contact textarea").on('focusout', function(){
 //   window.location.href = "https://drive.google.com/uc?export=download&id=1OVOyQLRrmGQ7yr3UzPGuILc5P73wNp-v";
 //   window.location.reload();
 // })
+

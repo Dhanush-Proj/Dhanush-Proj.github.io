@@ -300,7 +300,7 @@ p, span, a{
 
 #cv .skill-item > h4{
 	font-size: 16px;
-	color: #222;
+	color: #575757;
 }
 
 #cv .skill-item > .progress{
@@ -772,4 +772,20 @@ footer h4{
 
 #emailcontent{
     
+}
+.project-tile {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

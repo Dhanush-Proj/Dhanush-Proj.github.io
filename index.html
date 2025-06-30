@@ -6,12 +6,13 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<link rel="icon" type="image/png" href="/src/logo.png" />
+  <link rel="icon" type="image/png" href="/src/logo.png" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="src/style.css">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
 
@@ -42,7 +43,6 @@
 
               <li><a class="dropdown-item" href="#education">Education</a></li>
               <li><a class="dropdown-item" id="downloadbtn"
-
                   href="https://drive.google.com/uc?export=download&id=1pf9dZrMILeb7ljeD3G7pOK4R_k5S0biX" download
                   target="_blank">Download</a></li>
             </ul>
@@ -105,14 +105,14 @@
             <div class="skill-item">
               <h4>C</h4>
               <div class="progress">
-                <div class="progress-bar" style="width:80%"></div>
+                <div class="progress-bar" style="width:90%"></div>
               </div>
             </div>
 
             <div class="skill-item">
               <h4>C++</h4>
               <div class="progress">
-                <div class="progress-bar" style="width:75%"></div>
+                <div class="progress-bar" style="width:90%"></div>
               </div>
             </div>
 
@@ -131,6 +131,12 @@
               </div>
             </div>
 
+            <div class="skill-item">
+              <h4>Rust</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%"></div>
+              </div>
+            </div>
           </div>
 
 
@@ -191,54 +197,54 @@
     </div>
   </div>
 
-  <div class="" id="portfolio">
-    <h2> projects</h2>
-
+  <section id="portfolio" class="py-5 bg-white">
     <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
       <div class="row">
 
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <img src="public/tetrisclone.png">
-          <div class="">
-            <a href="https://github.com/Dhanush-Proj/Tetris_Using_Raylib-.git">
-
-              <h3 class="project-title">Tetris in C++ Using Raylib</h3>
-            </a>
-
-          </div>
+        <!-- Tetris -->
+        
+        <!-- Simple Kernel -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://github.com/Dhanush-Proj/OS_1.git" target="_blank" class="d-block project-tile">
+            <img src="public/simplekernel.png" alt="Simple Kernel in C and Assembly" class="img-fluid project-image">
+            <h5 class="text-center mt-2">Simple Kernel in C and Assembly</h5>
+          </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <img src="public/simplekernel.png">
-          <div class="">
-            <a href="https://github.com/Dhanush-Proj/OS_1.git">
-
-              <h3 class="project-title">Simple Kernel in c and assembly</h3>
-            </a>
-          </div>
-
+        
+        <!-- GRAM Text Editor -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://github.com/Dhanush-Proj/GRAM_text_editor.git" target="_blank" class="d-block project-tile">
+            <img src="public/gramtext.png" alt="Text Editor in C" class="img-fluid project-image">
+            <h5 class="text-center mt-2">Text Editor in C</h5>
+          </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <img src="public/gramtext.png">
-          <div>
-            <a href="https://github.com/Dhanush-Proj/GRAM_text_editor.git">
-
-              <h3 class="project-title">Text Editor in C</h3>
-            </a>
-          </div>
+        
+        <!-- Nature's Basket -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://github.com/Dhanush-Proj/Natures_Basket.git" target="_blank" class="d-block project-tile">
+            <img src="public/project.png" alt="E-Commerce App for Veggies" class="img-fluid project-image">
+            <h5 class="text-center mt-2">E-Commerce App for Veggies</h5>
+          </a>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-xs-12">
-        <img src="public/project.png">
-        <div>
-          <a href="https://github.com/Dhanush-Proj/Natures_Basket.git">
-
-            <h3 class="project-title">An E-Commerce App for selling and buying Veggies</h3>
+        <!-- Browser -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://github.com/Dhanush-Proj/Savanna-Browser.git" target="_blank" class="d-block project-tile">
+            <img src="public/browser.png" alt="WebKit browser" class="img-fluid project-image">
+            <h5 class="text-center mt-2">WebKit Browser in Rust</h5>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://github.com/Dhanush-Proj/Tetris_Using_Raylib-.git" target="_blank"
+            class="d-block project-tile">
+            <img src="public/tetrisclone.png" alt="Tetris Game in C++ using Raylib" class="img-fluid project-image">
+            <h5 class="text-center mt-2">Tetris in C++ Using Raylib</h5>
           </a>
         </div>
       </div>
     </div>
-  </div>
-
+  </section>
+  
   </div>
 
   <div id="emailcontent">
@@ -300,7 +306,7 @@
         </a>
         <a href="https://x.com/Attakingbolt" target="_blank">
           <i class="fab fa-twitter"></i>
-        </a>
+        </a>f
         <a href="https://github.com/Dhanush-Proj" target="_blank">
           <i class="fab fa-github"></i>
         </a>

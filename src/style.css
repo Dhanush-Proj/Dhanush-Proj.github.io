@@ -256,7 +256,7 @@ p, span, a{
 #cv{
 	padding-top: 80px;
 	padding-bottom: 80px;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-image: linear-gradient(to top, #e9defa 0%, #fbfcdb 100%);
 
 }
 

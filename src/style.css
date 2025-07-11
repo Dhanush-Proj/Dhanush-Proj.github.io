@@ -71,11 +71,8 @@ p, span, a{
 
 #header{
 	min-height: 100vh;
-	background-image: url('Untitled.jpg');
-
-    background-color: #0F0F0F;
-    background-size: cover;
-    -moz-background-size: cover;
+	/* background-image: url('/public/images/5192479.jpg'); */
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);    -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-position: center;
@@ -108,6 +105,7 @@ p, span, a{
     display: none;
     padding: 0;
     background: rgba(0, 0, 0, .8);
+
 }
 
 .nav-content > li{
@@ -258,7 +256,8 @@ p, span, a{
 #cv{
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background: #F7F7F7;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
 }
 
 #cv  hr{
@@ -290,7 +289,7 @@ p, span, a{
 }
 
 .skills > h4{
-    color: #11ABB0;
+    color: #005c5f;
     margin-bottom: 40px;
 }
 
@@ -300,7 +299,7 @@ p, span, a{
 
 #cv .skill-item > h4{
 	font-size: 16px;
-	color: #575757;
+	color: #000000;
 }
 
 #cv .skill-item > .progress{
@@ -309,8 +308,7 @@ p, span, a{
 }
 
 #cv .skill-item .progress-bar{
-	background: #222;
-}
+background: linear-gradient(to right, #8a918b 0%, #5c94a3 100%);}
 
 .exp + .exp{
     margin-top: 60px;
@@ -341,10 +339,9 @@ p, span, a{
 
 
 
-
 #portfolio{
 	padding: 80px 0;
-    background: #EBEEEE;
+    background-image: linear-gradient(to bottom,#e9defa 0%, #304352 100%);
 }
 
 
@@ -355,7 +352,7 @@ p, span, a{
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
-    color: #666;
+    color: #292828;
 }
 
 #portfolio img{

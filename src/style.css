@@ -58,6 +58,7 @@
    }
 
    .card {
+        
        background: var(--bg-soft);
        border: 1px solid #3c3836;
        border-radius: 12px;

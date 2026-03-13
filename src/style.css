@@ -45,6 +45,7 @@
 
    h1 {
        font-size: 3rem;
+       color: var(--yellow);
    }
 
    h2 {
@@ -191,7 +192,7 @@
 
    
    .bg-icon.blast {
-       opacity: 0.12;
+       opacity: 0.3;
        transform: translate(var(--x), var(--y)) scale(1);
    }
 
@@ -200,7 +201,7 @@
        width: 90px;
        height: 70px;
        opacity: 0.5;
-       filter: brightness(0.9);
+       filter: brightness(1);
    }
 
    header * {

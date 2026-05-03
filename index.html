@@ -1,174 +1,116 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <title>Dhanush P Reji | Portfolio</title>
+  <title>Dhanush P Reji | Systems & Web</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
-          <link rel="icon" type="image/x-icon" href="public/images/logo.png"> 
-
+  <link rel="icon" type="image/x-icon" href="public/images/logo.png"> 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+<body class="pixel-ui">
 
-<body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <!-- Hyprland Style Status Bar -->
+  <nav class="status-bar">
+    <div class="bar-section bar-left">
+      <i class="fa-solid fa-ghost"></i>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+    </div>
+    <div class="bar-section bar-right">
+      <span id="live-clock">00:00</span>
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
   </nav>
 
-  <div class="spacer"></div>
+  <!-- Split Background layers -->
+  <div class="bg-night"></div>
+  <div class="bg-day"></div>
 
-  <header id="home">
-      <div class="lang-icons-bg">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" class="bg-icon" style="top:10%;left:15%;">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" class="bg-icon" style="top:20%;right:12%;">
-      <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/raylib-gu84w0m6k8djljr8ek4sq9.png/raylib-j326e49obzmg0j0h2zyt.png?_a=DATAg1AAZAA0" class="bg-icon" style="bottom:25%;left:10%;">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg" class="bg-icon" style="bottom:15%;right:18%;">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" class="bg-icon" style="top:60%;right:35%;">
-      <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" class="bg-icon" style="top:70%;right:50%;">
-      <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/rust-1.png" class="bg-icon" style="top:10%;right:50%;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg" class="bg-icon" style="top:10%;right:30%;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg" class="bg-icon" style="top:20%;right:30%;">
-      <img src="https://www.svgrepo.com/show/439038/webkit.svg" class="bg-icon" style="top:20%;left:30%;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Made_with_Linux_casper.svg" class="bg-icon" style="top:30%;left:10%;">
+  <main class="viewport">
+    <header id="home" class="hero">
+      <h1 id="name"></h1>
+      <p class="sub-label">SYSTEM_DEV // KERNEL_MAGE // DJANGO_HEALER</p>
+    </header>
 
-    </div>
-    <h1 id="name"></h1>
-    <p style="color: var(--gray); font-size: 15px;">Software Developer</p>
-  </header>
-
-  <section id="about">
-    <h2>About</h2>
-    <div class="card">
-      <p style="font-size: 15px;">Hi, I'm Dhanush, a software developer focused on system programming and web development. I enjoy building
-        low-level systems with C, C++, Rust and backend projects with Go and Python.</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card skills">
-      <span>C</span><span>C++</span><span>Rust</span><span>Go</span><span>Python</span>
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>Linux</span><span>Git</span>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <img class="project-image" src="public/images/simplekernel.png" alt="Simple Kernel"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>Simple Kernel</h3>
-        <p>Minimal kernel in C and Assembly.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/OS_1.git" target="_blank">View</a>
-        <br>made with
-        <a class="langs">C</a>
-        <a class="langs">Assembly</a>
-
-
+    <section id="about" class="content-section">
+      <div class="parchment-card">
+        <h2>[ 01_PROFILE ]</h2>
+        <p>Software developer focused on systems programming and web development. I build low-level systems in C, C++, and Rust, and high-level backends in Go and Python.  </p>
       </div>
+    </section>
 
-      <div class="card">
-        <img class="project-image" src="public/images/gramtext.png" alt="GRAM Text Editor"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>GRAM Text Editor</h3>
-        <p>Terminal-based text editor in C.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/GRAM_text_editor.git" target="_blank">View</a>
-
-        <br>made with
-        <a class="langs">C</a>
-
+    <section id="skills" class="content-section">
+      <div class="parchment-card">
+        <h2>[ 02_STATS ]</h2>
+        <div class="skills-grid">
+          <span>C/C++</span><span>Rust</span><span>Go</span><span>Python</span>
+          <span>Linux</span><span>Django</span><span>Vim</span><span>Git</span>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img class="project-image" src="public/images/browser.png" alt="Savanna Browser"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>Savanna Browser</h3>
-        <p>Rust-based WebKit browser project.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/Savanna-Browser.git" target="_blank">View</a>
-        <br>made with
-        <a class="langs">Rust</a>
-        <a class="langs">Webkit</a>
+    <section id="projects" class="content-section">
+      <h2 class="section-title">ACTIVE_QUESTS</h2>
+      <div class="projects-container parchment-card project-box featured">
+        
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/simplekernel.png" alt="Simple Kernel">
+          <h3>Simple Kernel</h3>
+          <p>Minimal kernel in C/Assembly</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/OS_1.git" target="_blank">EXECUTE</a>
+        </div>
+
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/gramtext.png" alt="GRAM Editor">
+          <h3>GRAM Editor</h3>
+          <p>Terminal text editor in C</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/GRAM_text_editor.git" target="_blank">EXECUTE</a>
+        </div>
+
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/browser.png" alt="Savanna Browser">
+          <h3>Savanna Browser</h3>
+          <p>Rust-based WebKit project</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/Savanna-Browser.git" target="_blank">EXECUTE</a>
+        </div>
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/tetrisclone.png" alt="Tetris">
+          <h3>Tetris</h3>
+          <p>Game built with Raylib in C</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/Tetris_Using_Raylib-.git" target="_blank">EXECUTE</a>
+        </div>
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/memoir.png" alt="Memoir">
+          <h3>Memoir</h3>
+          <p>Personal journaling app</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/Memoir.git" target="_blank">EXECUTE</a>
+        </div>
+        <div class="parchment-card project-box">
+          <img class="project-image" src="public/images/project.png" alt="Natures Basket">
+          <h3>Natures Basket</h3>
+          <p>Local produce marketplace</p>
+          <a class="quest-btn" href="https://github.com/Dhanush-Proj/Natures_Basket.git" target="_blank">EXECUTE</a>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img class="project-image" src="public/images/tetrisclone.png" alt="Tetris"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>Tetris</h3>
-        <p>Tetris clone in C++ using Raylib.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/Tetris_Using_Raylib-.git" target="_blank">View</a>
-        <br>made with
-        <a class="langs">C++</a>
-        <a class="langs">Raylib</a>
-
+    <section id="contact" class="content-section">
+      <div class="parchment-card social-bar">
+        <a href="mailto:dhanushpreji5@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Dhanush-Proj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dhanush-p-reji-049300308/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-
-      <div class="card">
-        <img class="project-image" src="public/images/memoir.png" alt="Memoir"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>Memoir</h3>
-        <p>Diary application using Go backend.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/Memoir.git" target="_blank">View</a>
-
-        <br>made with
-        <a class="langs">GO </a>
-      </div>
-
-
-      <div class="card">
-        <img class="project-image" src="public/images/project.png" alt="Memoir"
-          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%27%233c3836%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23ebdbb2%27 font-size=%2720%27 font-family=%27monospace%27>Preview not available</text></svg>'">
-        <h3>Natures Basket</h3>
-        <p>An E-commerce App based on shopify.</p>
-        <a class="btn" href="https://github.com/Dhanush-Proj/Memoir.git" target="_blank">View</a>
-        <br>made with
-        <a class="langs">Python</a>
-        <a class="langs">Django</a>
-        <a class="langs">HTML</a>
-        <a class="langs">CSS</a>
-        <a class="langs">JS</a>
-        <a class="langs">JQUERY</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-<div class="card social-icons">
-  <a href="mailto:dhanushpreji5@gmail.com" title="Email">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-
-  <a href="https://github.com/Dhanush-Proj" target="_blank" title="GitHub">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/dhanush-p-reji-049300308/" target="_blank" title="LinkedIn">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-</div>
-
-  </section>
-
-  <footer>
-    <p>© 2025 Dhanush P. Reji</p>
-  </footer>
+    </section>
+  </main>
 
   <div id="imgModal" class="img-modal" onclick="closeImage()">
     <img id="modalImg" src="" alt="Preview" />
   </div>
 
-
   <script src="src/main.js"></script>
-
 </body>
-
 </html>

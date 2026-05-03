@@ -2,6 +2,7 @@ const nameText = "Dhanush P Reji";
 let i = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Typing animation for Hero
   const nameEl = document.getElementById("name");
   function typeName() {
     if (i < nameText.length) {
@@ -12,48 +13,71 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   typeName();
 
-  // Blast animation for background icons
-  document.querySelectorAll('.bg-icon').forEach(icon => {
-    const x = Math.random() * window.innerWidth - window.innerWidth / 2;
-    const y = Math.random() * window.innerHeight - window.innerHeight / 2;
-    icon.style.left = '50%';
-    icon.style.top = '50%';
-    icon.style.setProperty('--x', `${x}px`);
-    icon.style.setProperty('--y', `${y}px`);
-    requestAnimationFrame(() => icon.classList.add('blast'));
-  });
+  // Time-based background
+  function updateBackground() {
+    const hour = new Date().getHours();
+    const isDay = hour >= 6 && hour < 18;
+    document.documentElement.style.setProperty('--bg-color', isDay ? 'var(--day-bg)' : 'var(--night-bg)');
+    document.body.style.backgroundColor = isDay ? '#7aa2f7' : '#1a1b26';
+  }
+  updateBackground();
+  setInterval(updateBackground, 60000);
 
-// Image click preview
-const modal = document.getElementById("imgModal");
-const modalImg = document.getElementById("modalImg");
+  // Status Bar Live Clock
+  const clockEl = document.getElementById("live-clock");
+  function updateClock() {
+    const now = new Date();
+    clockEl.textContent = now.getHours().toString().padStart(2, '0') + ":" + 
+                          now.getMinutes().toString().padStart(2, '0');
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
 
-document.querySelectorAll(".project-image").forEach(img => {
-  img.addEventListener("click", (e) => {
-    modalImg.src = e.target.src;
-    modal.style.display = "flex";
+  // Project Image Modal Logic[cite: 2]
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+
+  document.querySelectorAll(".project-image").forEach(img => {
+    img.addEventListener("click", (e) => {
+      modalImg.src = e.target.src;
+      modal.style.display = "flex";
+    });
   });
-});
 });
 
 function closeImage() {
   document.getElementById("imgModal").style.display = "none";
 }
+document.addEventListener("DOMContentLoaded", () => {
+  // ... your existing name typing and clock logic[cite: 2] ...
 
-
-    // Tiny JS enhancement: active nav link on scroll
-    const sections = document.querySelectorAll("section, header");
-    const navLinks = document.querySelectorAll("nav a");
-
-    window.addEventListener("scroll", () => {
-      let current = "home";
-      sections.forEach(sec => {
-        const top = window.scrollY;
-        if (sec.offsetTop - 120 <= top) current = sec.id;
-      });
-
-      navLinks.forEach(a => {
-        a.style.color = a.getAttribute("href") === `#${current}`
-          ? "var(--yellow)"
-          : "var(--fg)";
-      });
+  // Scroll Reveal Logic
+  const revealCallback = (entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add a slight delay for each card to create a staggered effect
+        setTimeout(() => {
+          entry.target.classList.add("active");
+        }, index * 100); 
+        observer.unobserve(entry.target);
+      }
     });
+  };
+
+  const revealObserver = new IntersectionObserver(revealCallback, {
+    threshold: 0.15
+  });
+
+  // Apply to all cards and sections
+  document.querySelectorAll(".parchment-card, .content-section").forEach(el => {
+    el.classList.add("reveal");
+    revealObserver.observe(el);
+  });
+
+  // Add a "Wiggle" effect on first hover to suggest interactivity
+  document.querySelectorAll('.project-box').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.animation = 'none'; // Reset any floating animations
+    }, { once: true });
+  });
+});

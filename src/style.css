@@ -161,6 +161,17 @@ h1 { font-size: 2.5rem; text-shadow: 4px 4px var(--night-bg); margin-bottom: 15p
   animation: float 3s ease-in-out infinite;
 }
 
+.heatmap-card h2 {
+  margin-bottom: 20px;
+}
+
+.heatmap-img {
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+  border: 2px solid var(--text-dark);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .status-bar {

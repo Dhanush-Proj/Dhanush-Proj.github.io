@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       card.style.animation = 'none'; // Reset any floating animations
     }, { once: true });
   });
-});
 
+});
 
 const currentYearEl = document.getElementById("currentYear");
 if (currentYearEl) {

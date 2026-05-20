@@ -161,15 +161,80 @@ h1 { font-size: 2.5rem; text-shadow: 4px 4px var(--night-bg); margin-bottom: 15p
   animation: float 3s ease-in-out infinite;
 }
 
+.heatmap-card {
+  position: relative;
+}
+
 .heatmap-card h2 {
   margin-bottom: 20px;
 }
 
-.heatmap-img {
+.tooltip {
+  position: fixed;
+  background: var(--text-dark);
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  line-height: 1.6;
+  padding: 8px 10px;
+  border: 2px solid var(--accent);
+  pointer-events: none;
+  z-index: 100;
+  white-space: nowrap;
+  image-rendering: pixelated;
+}
+
+.year-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.year-btn {
+  background: var(--text-dark);
+  color: #fff;
+  border: 2px solid var(--text-dark);
+  padding: 6px 12px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+.year-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.year-btn:active {
+  transform: translate(1px, 1px);
+}
+
+.month-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.year-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  color: var(--text-dark);
+  min-width: 80px;
+  text-align: center;
+}
+
+.contribution-canvas {
   width: 100%;
   height: auto;
-  image-rendering: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
   border: 2px solid var(--text-dark);
+  display: block;
 }
 
 /* Mobile Responsive */

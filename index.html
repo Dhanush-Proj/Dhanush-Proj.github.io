@@ -105,7 +105,16 @@
 
       <div class="parchment-card heatmap-card">
         <h2>[ CONTRIBUTION_MAP ]</h2>
-        <img id="heatmap-img" src="https://gh-heat.anishroy.com/api/Dhanush-Proj/svg?colors=d4e8ff,80d0ff,2a9aff,0055cc&transparent=true" alt="GitHub Contribution Heatmap" class="heatmap-img" loading="lazy">
+        <div class="year-selector" id="year-selector">
+          <button class="year-btn" id="year-prev">&lt;</button>
+          <span class="year-label" id="year-label">----</span>
+          <button class="year-btn" id="year-next">&gt;</button>
+        </div>
+        <div class="month-header" id="month-header" style="display:none">
+          <button class="year-btn" id="month-back">&lt; BACK</button>
+          <span class="year-label" id="month-label"></span>
+        </div>
+        <canvas id="contribution-canvas" class="contribution-canvas"></canvas>
       </div>
     </section>
 
@@ -130,6 +139,8 @@
       <span>Made with <i class="fa-solid fa-heart-broken"></i></span>
     </div>
   </footer>
+  <div id="tooltip" class="tooltip" style="display:none"></div>
   <script src="src/main.js"></script>
+  <script src="src/contribution-map.js"></script>
 </body>
 </html>

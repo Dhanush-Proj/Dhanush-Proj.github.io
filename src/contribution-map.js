@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var USERNAME = 'Dhanush-Proj';
+  var USERNAME = 'Dhanush-Projectile';
   var canvas = document.getElementById('contribution-canvas');
   if (!canvas) return;
   var ctx = canvas.getContext('2d');
